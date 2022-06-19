@@ -9,6 +9,9 @@ let LastNameError = document.querySelector("#lastNameError");
 let EmailError = document.querySelector("#emailError");
 let PasswordError = document.querySelector("#passwordError");
 
+function err(borderId, errorDivId) {}
+
 button.addEventListener("click", function (event) {
   event.preventDefault();
+  err();
 });
