@@ -18,26 +18,30 @@
   </style>
 </head>
 <body>
-  <div class="w-[320px] h-[620px] bg-[url('./images/bg-intro-mobile.png')] mx-auto text-center">
-    <div class="w-[100%] h-[100%] bg ">
-      <p class="text-white font-bold pt-[40px] text-[25px] w-[280px] pl-[10px]">
+  <div class="w-[320px] md:w-[100%] h-[620px] md:h-[100vh] bg-[url('./images/bg-intro-mobile.png')] mx-auto text-center">
+    <div class="w-[100%] h-[100%] bg md:flex">
+      <div class="md:ml-[150px] md:mt-[200px]">
+      <p class="text-white font-bold pt-[40px] text-[25px] md:text-[70px] w-[280px] md:w-[600px] pl-[10px]">
         Learn to code by watching others
       </p>
-      <p class="text-white text-[13px] w-[280px] mt-5 pl-[25px]">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+      <p class="text-white text-[13px] md:text-[17px] w-[280px] md:w-[650px] md:text-left mt-5 pl-[25px]">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
         but understanding how developers think is invaluable. </p>
-        <div class="bg-purple-700 w-[290px] h-[50px] rounded-md mx-auto mt-[40px]">
-          <p class="text-white mx-auto font-bold">Try it free 7 days <span class="font-normal"> then $20/mo. thereafter </span></p>
+      </div>
+      <div class="md:mt-[120px] md:ml-[100px]">
+        <div class="bg-purple-700 w-[290px] md:w-[420px] h-[50px] rounded-md mx-auto mt-[40px]">
+          <p class="text-white mx-auto font-bold md:pt-[12px]">Try it free 7 days <span class="font-normal"> then $20/mo. thereafter </span></p>
         </div>
-        <div class="w-[290px] h-auto bg-zinc-100 rounded-md mx-auto mt-[20px]">
+        <div class="w-[290px] md:w-[420px] h-auto bg-zinc-100 rounded-md mx-auto mt-[20px]">
           <form>
-            <input type="text" name="firstName" id="firstName" placeholder="First Name" class="border-[1px] rounded-sm border-solid border-gray-400 h-[35px] mt-5">
-            <input type="text" name="lastName" id="lastName" placeholder="Last Name" class="border-[1px] rounded-sm border-solid border-gray-400 h-[35px] mt-[10px]">
-            <input type="text" name="email" id="email" placeholder="Email Address" class="border-[1px] rounded-sm border-solid border-gray-400 h-[35px] mt-[10px]">
-            <input type="password" name="password" id="parrword" placeholder="Password" class="border-[1px] rounded-sm border-solid border-gray-400 h-[35px] mt-[10px]">
-            <button class="bg-green-500 py-[10px] px-[27px] text-[12px] text-white rounded-md mt-[10px]">CLAIM YOUR FREE TRIAL</button>
+            <input type="text" name="firstName" id="firstName" placeholder="First Name" class="border-[1px] rounded-sm border-solid border-gray-400 h-[35px] md:h-[50px] mt-5 md:w-[350px]">
+            <input type="text" name="lastName" id="lastName" placeholder="Last Name" class="border-[1px] rounded-sm border-solid border-gray-400 h-[35px] md:h-[50px] mt-[10px] md:w-[350px]">
+            <input type="text" name="email" id="email" placeholder="Email Address" class="border-[1px] rounded-sm border-solid border-gray-400 h-[35px] md:h-[50px] mt-[10px] md:w-[350px]">
+            <input type="password" name="password" id="parrword" placeholder="Password" class="border-[1px] rounded-sm border-solid border-gray-400 h-[35px] md:h-[50px] mt-[10px] md:w-[350px]">
+            <button class="bg-green-500 py-[10px] px-[27px] md:w-[350px] md:h-[50px] text-[12px] text-white rounded-md mt-[10px]">CLAIM YOUR FREE TRIAL</button>
           </form>
           <p class="text-gray-400 text-[10px] w-[200px] mx-auto mt-[5px]">By clicking the button, you are agreeing to our <span class="text-red-500"> Terms and Services </span></p>
         </div>
+      </div>
     </div>
   </div>
 
