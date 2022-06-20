@@ -15,7 +15,8 @@ function showError(borderId, errorDivId) {
 }
 function removeError(borderId, errorDivId) {
   errorDivId.classList.add("hidden");
-  borderId.classList.add("border-black");
+  borderId.classList.remove("border-red-300");
+  borderId.classList.add("border-gray-400");
 }
 
 function isEmpty(inputVar, errorDivId) {
@@ -29,12 +30,11 @@ function isEmpty(inputVar, errorDivId) {
 }
 
 function validateEmail(inputVar, errorDivId) {
-  if (inputVar.value == "" || !inputVar.includes("@")) {
+  if (inputVar.value == "" || String(!inputVar).includes("@")) {
     showError(inputVar, errorDivId);
     return false;
   } else {
     removeError(inputVar, errorDivId);
-    console.log("true");
     return true;
   }
 }
@@ -42,8 +42,16 @@ function validateEmail(inputVar, errorDivId) {
 button.addEventListener("click", function (event) {
   event.preventDefault();
 
-  //isEmpty(firstname, firstNameError);
-  //isEmpty(lastname, LastNameError);
-  //isEmpty(password, passwordError);
-  validateEmail(email, emailError);
+  if (
+    isEmpty(firstname, firstNameError) &&
+    isEmpty(lastname, LastNameError) &&
+    isEmpty(password, passwordError) &&
+    validateEmail(email, emailError)
+  ) {
+    firstname.value = "";
+    lastname.value = "";
+    email.value = "";
+    password.value = "";
+    alert("form completed!");
+  }
 });
